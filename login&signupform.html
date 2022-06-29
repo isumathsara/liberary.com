@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login & SignUp</title>
+	
+    <link rel="stylesheet" href="css/login&signupformstyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="form-box">
+			<div class="button-box">
+
+
+				<div id="btn"></div>
+
+		       <button type="button" class="toggle-btn" onclick="login()"> Login</button>
+				<button type="button" class="toggle-btn"  onclick="register()">Register</button>
+			</div>
+		
+
+		<div class="social-media">
+		       <i class="fa fa-facebook facebook"  style="font-size:35px"> </i>
+		       <i class="fa fa-twitter twitter" style="font-size:35px;"></i>
+		       <i class="fa-brands fa-instagram" style="font-size:35px;"></i></div>
+			
+
+			<form class="login-form" id="login">
+				<input type="text" class="form-field" placeholder="Username" required>
+				<input type="password" class="form-field" placeholder="Password" required>
+
+				<input type="checkbox" class="checkbox"><span>Remember Password</span>
+
+				<button type="submit" class="submit">Login</button>
+				
+			</form>
+
+			<form class="login-form" id="register">
+				<input type="text" class="form-field" placeholder="Username" required>
+				<input type="email" class="form-field" placeholder="Email" required>
+				<input type="password" class="form-field" placeholder="Password" required>
+
+				<input type="checkbox" class="checkbox"><span>
+                I Accept to the Terms & Conditions</span>
+
+                <center>
+
+
+                <button type="submit" class="submit">Register</button>
+                </center>
+				
+			</form>
+
+			</div>
+			
+	</div>
+
+
+<script>
+	var x = document.getElementById("login");
+	var y = document.getElementById("register");
+	var z = document.getElementById("btn");
+
+	function register()
+    {
+		x.style.left ="-400px";
+		y.style.left ="50px";
+		z.style.left ="110px";
+
+
+	}
+	function login()
+    {
+		x.style.left ="50px";
+		y.style.left ="450px";
+		z.style.left ="0px";
+
+
+	}
+</script>	
+
+</body>
+</html>
